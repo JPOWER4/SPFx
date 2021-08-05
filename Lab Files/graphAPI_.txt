@@ -1,0 +1,15 @@
+We can access the site collection using three different ways in Microsoft Graph API:
+
+By using the root - Get Top level SharePoint site collection by using ‘root’ - sites('root’)
+Ex: sites('root')/lists('SPFxContacts')/items?expand=fields
+
+By using the Site server relative URL - sites/jpower4mvp.sharepoint.com:/sites/SPFxTraining
+Ex: sites/jpower4mvp.sharepoint.com:/sites/SPFxTraining:/lists/SPFxContacts/items?expand=fields
+ 
+
+By using the Site ID
+Ex: sites('jpower4mvp.sharepoint.com,d23ab611-4170-4420-80bd-280cfee90c39,74a98147-7e90-4660-90c4-7b6a9b804f25')/lists('SPFxContacts')/items?expand=fields
+
+Get SiteID
+To get site id using relative URL in Microsoft Graph Explorer
+https://graph.microsoft.com/v1.0/sites/jpower4mvp.sharepoint.com:/sites/SPFxTraining
